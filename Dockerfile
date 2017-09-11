@@ -12,7 +12,7 @@ ENV PATH $PATH:$GOBIN
 ENV GOPATH /root/goproj
 
 RUN apt-get update \
-    && apt-get install -y git \
+    && apt-get install -y git vim \
     && mkdir $GOPATH \
     && mkdir $GOPATH/bin \
     && mkdir $GOPATH/pkg \
